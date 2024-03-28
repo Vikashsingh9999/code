@@ -47,13 +47,13 @@
 		<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language. <button onclick="copy1()">C</button>&nbsp<button onclick="#">D</button></h3>
 	<h3>Pract 01:(b)Draw a coordinate access at the center of the screen.<button onclick="copy1()">C</button>&nbsp<button onclick="#">D</button></h3>
 	<h3>Pract 02:(a)Divide your screen into four regions, draw circle, rectangle, ellipse, and half ellipse in each region with appropriate massage.<button onclick="copy1()">C</button>&nbsp<button onclick="#">D</button></h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
-	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
+	<h3>Pract 02:(b)Draw a simple hut on a screen.<button onclick="copy2b()">C</button>&nbsp<button onclick="#">D</button></h3>
+	<h3>Pract 03:(a)Draw Circle in the center of the screen.</h3>
+	<h3>Pract 03:(b)Draw Rectancle in the center of the screen.</h3>
+	<h3>Pract 03:(c)Draw Square in the center of the screen.</h3>
+	<h3>Pract 03:(d)Draw Concentric Circles in the center of the screen.</h3>
+	<h3>Pract 03:(e)Draw Ellipse in the center of the screen.</h3>
+	<h3>Pract 03:(f)Draw Line in the center of the screen.</h3>
 	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
 	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
 	<h3>Pract 01:(a)Study and enlist the basic functions used for graphics in C/C++/Python Language.</h3>
@@ -94,6 +94,11 @@
             /* Copy text into clipboard */
             navigator.clipboard.writeText
                 ("copied text");
+        }
+        function copy2b() {
+        	let txt="#include <graphics.h>\n#include <conio.h>\n int main() {\nint gd = DETECT, gm;\ninitgraph(&gd, &gm, "");\nrectangle(200, 300, 400, 450);\nline(200, 300, 300, 200);\nline(300, 200, 400, 300);\nline(400, 300, 200, 300);\nrectangle(270, 380, 330, 450);\nrectangle(230, 320, 280, 370);\nrectangle(320, 320, 370, 370);\ngetch();\nclosegraph();\nreturn 0;}";
+            navigator.clipboard.writeText
+                (txt);
         }
     </script>
 </html>
